@@ -15,7 +15,7 @@ sudo mv "$folder/personal-config" ./
 
 sudo rm -rf "$folder"
 
-git clone https://github.com/JJTofflemire/Signal-Server.git
+git clone https://github.com/jtof-dev/Signal-Server.git
 
 sudo mv Signal-Server "$folder"
 

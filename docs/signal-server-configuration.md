@@ -572,7 +572,7 @@ Installing is the same as ever. Install your dependencies (`git`, `java`, `docke
 ```
 sudo apt update && sudo apt upgrade -y && sudo apt install -y git openjdk-19-jre-headless docker docker-compose
 
-git clone https://github.com/JJTofflemire/Signal-Server.git && cd Signal-Server/scripts && bash surgery-compiler.sh && bash docker-compose-first-run.sh
+git clone https://github.com/jtof-dev/Signal-Server.git && cd Signal-Server/scripts && bash surgery-compiler.sh && bash docker-compose-first-run.sh
 ```
 
 `scp` in your `personal-config` folder, then run with `bash quickstart.sh`

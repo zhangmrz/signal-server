@@ -1,6 +1,6 @@
 # Signal-Server Full Installation Guide
 
-- [Roadmap! New readers probably start here](https://github.com/JJTofflemire/Signal-Docker)
+- [Roadmap! New readers probably start here](https://github.com/jtof-dev/Signal-Docker)
 - Written for Signal-Server v9.81.0
 - Documented with a Debian / Ubuntu EC2 instance in mind
 
@@ -27,7 +27,7 @@ Signal-Server needs to be ran in an AWS EC2 instance for it to function. While y
 ### The easy way
 
 ```
-git clone https://github.com/JJTofflemire/Signal-Server.git
+git clone https://github.com/jtof-dev/Signal-Server.git
 cd Signal-Server/scripts
 # now choose surgery-compiler.sh or main-compiler.sh, though surgery-compiler is the one that will work currently
 bash surgery-compiler.sh
@@ -82,7 +82,7 @@ Note: this will delete any existing redis-cluster volumes generated in the `Sign
 
 **Manually**
 
-Check out [this README in Signal-Docker](https://github.com/JJTofflemire/Signal-Docker/tree/main/redis-cluster)
+Check out [this README in Signal-Docker](https://github.com/jtof-dev/Signal-Docker/tree/main/redis-cluster)
 
 ## Starting the server
 
@@ -127,11 +127,11 @@ When running Signal-Server in a Docker container, replace port `8080` with port 
 
 Once you get the server running without errors in EC2, there are a couple other services you need to set up
 
-- [NGINX and Certbot to handle SSL certificates](https://github.com/JJTofflemire/Signal-Docker/tree/main/nginx-certbot)
+- [NGINX and Certbot to handle SSL certificates](https://github.com/jtof-dev/Signal-Docker/tree/main/nginx-certbot)
 
   - NGINX needs to be done first to generate certificates which will be used while configuring `registration-service`
 
-- [Signalapp's registration-service](https://github.com/JJTofflemire/Signal-Docker/tree/main/registration-service) to handle registering phone numbers
+- [Signalapp's registration-service](https://github.com/jtof-dev/Signal-Docker/tree/main/registration-service) to handle registering phone numbers
 
 ### Recloning
 
@@ -146,7 +146,7 @@ bash recloner.sh
 
 ### Connecting the server to an Android app
 
-- Check out [JJTofflemire/Signal-Android](https://github.com/JJTofflemire/Signal-Android)!
+- Check out [jtof-dev/Signal-Android](https://github.com/jtof-dev/Signal-Android)!
 
 ## To-Do
 
