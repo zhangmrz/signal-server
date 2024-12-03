@@ -30,7 +30,7 @@ deployer.log
 .classpath
 .settings
 .vscode
-personal-config/*
+#personal-config/*
 !personal-config/config
 .DS_Store
 runtime/*
